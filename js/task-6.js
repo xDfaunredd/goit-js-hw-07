@@ -42,6 +42,7 @@ const destroyBoxes = () => {
 };
 
 createButton.addEventListener("click", () => {
+  destroyBoxes();
   createBoxes(amount);
 });
 destroyButton.addEventListener("click", () => destroyBoxes());
